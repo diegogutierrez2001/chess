@@ -17,8 +17,9 @@ func (s Square) InBounds() bool {
 func (s Square) ToString() (string, error) {
 
 	// check that square is in bounds
-	if (s.InBounds() == false)
+	if (s.InBounds() == false) {
 		return "", errors.New("Out of bounds.")
+	}
 
 	// get appropriate letter for square file
 	switch (s.File) {
