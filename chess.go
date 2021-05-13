@@ -33,8 +33,3 @@ func (s Square) ToString() (string, error) {
 	}
 }
 
-func Test() {
-	Square testSquare{1, 1}
-	fmt.Println(testSquare.ToString())
-}
-
