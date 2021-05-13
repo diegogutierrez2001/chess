@@ -34,6 +34,7 @@ func (s Square) ToString() (string, error) {
 }
 
 func Test() {
-	fmt.Println("test")
+	Square testSquare{1, 1}
+	fmt.Println(testSquare.ToString())
 }
 
